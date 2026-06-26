@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>英国自驾 · 16天行程</title>
+<title>英国自驾 · 18天行程</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -11,30 +11,22 @@
     font-family: system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
     padding: 24px 16px; min-height: 100vh;
   }
-  .journal {
-    max-width: 900px; width: 100%; background: #fffdf9;
-    border-radius: 24px; box-shadow: 0 4px 28px rgba(0,0,0,.08); overflow: hidden;
-  }
-  .spread { display: flex; flex-wrap: wrap; }
-  .page { flex: 1 1 390px; min-width: 340px; padding: 28px 24px 32px; }
-  .page:first-child { border-right: 1px dashed #e8e0d6; }
-
-  .header { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
+  .journal { max-width:900px; width:100%; background:#fffdf9; border-radius:24px; box-shadow:0 4px 28px rgba(0,0,0,.08); overflow:hidden; }
+  .spread { display:flex; flex-wrap:wrap; }
+  .page { flex:1 1 390px; min-width:340px; padding:28px 24px 32px; }
+  .page:first-child { border-right:1px dashed #e8e0d6; }
+  .header { display:flex; align-items:center; gap:10px; margin-bottom:16px; }
   .header .avatar { width:38px; height:38px; border-radius:50%; background:linear-gradient(135deg,#3a8a9e,#d4895a); display:flex; align-items:center; justify-content:center; color:#fff; font-size:16px; flex-shrink:0; }
   .header .meta .name { font-size:14px; font-weight:600; color:#2c2c2c; }
   .header .meta .date { font-size:11px; color:#999; margin-top:2px; }
   .header .like-btn { font-size:13px; color:#fc6b6b; background:#fff0f0; padding:4px 14px; border-radius:20px; font-weight:500; cursor:default; }
-
   .ptitle { font-size:20px; font-weight:700; color:#2c2c2c; margin-bottom:2px; }
   .psub { font-size:12px; color:#b0a89c; margin-bottom:10px; display:flex; gap:6px; flex-wrap:wrap; }
   .psub span { background:#f0ece6; padding:2px 10px; border-radius:12px; font-size:11px; }
-
   .mapc { border-radius:16px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,.06); margin-bottom:14px; }
   .mapc svg { display:block; width:100%; height:auto; }
-
   @keyframes dashMove { to { stroke-dashoffset:-20; } }
   .route-line { stroke-dasharray:6 4; animation:dashMove .8s linear infinite; }
-
   .summary { display:flex; gap:8px; margin-bottom:10px; }
   .summary .c { flex:1; padding:8px; border-radius:10px; text-align:center; font-size:10px; color:#fff; cursor:default; }
   .c1 { background:linear-gradient(135deg,#3a8a9e,#2a7a8e); }
@@ -42,14 +34,11 @@
   .c3 { background:linear-gradient(135deg,#d4895a,#c4784a); }
   .summary .c .n { font-size:18px; font-weight:700; }
   .summary .c .l { opacity:.85; margin-top:1px; }
-
   .rs { display:flex; flex-wrap:wrap; gap:6px; align-items:center; padding:8px 12px; background:#faf8f5; border-radius:12px; margin-bottom:10px; font-size:11px; color:#555; }
   .rs .s { display:flex; align-items:center; gap:3px; }
   .rs .dot { width:7px; height:7px; border-radius:50%; display:inline-block; }
-
   .st { font-size:13px; font-weight:600; color:#2c2c2c; margin:12px 0 6px; display:flex; align-items:center; gap:6px; }
   .st::after { content:''; flex:1; height:1px; background:#f0ece6; }
-
   .dl { display:flex; flex-direction:column; gap:4px; }
   .di { display:flex; align-items:flex-start; gap:8px; padding:6px 9px; background:#faf8f5; border-radius:9px; transition:transform .2s; cursor:default; }
   .di:hover { transform:translateX(3px); }
@@ -57,13 +46,10 @@
   .di .info { flex:1; min-width:0; }
   .di .info .t { font-size:11px; font-weight:600; color:#2c2c2c; }
   .di .info .d { font-size:9.5px; color:#888; margin-top:1px; line-height:1.3; }
-
   .footer { display:flex; justify-content:space-around; align-items:center; padding:10px 20px; border-top:1px solid #f0ece6; color:#999; font-size:11px; }
   .footer span { display:flex; align-items:center; gap:4px; cursor:default; }
-
   .vml { display:inline-block; font-size:11px; color:#3a8a9e; text-decoration:none; margin-top:6px; font-weight:500; }
   .vml:hover { text-decoration:underline; }
-
   @media (max-width:780px) { .page:first-child { border-right:none; border-bottom:1px dashed #e8e0d6; } .page { padding:18px 14px; } }
 </style>
 </head>
@@ -74,27 +60,26 @@
       <div class="avatar">🇬🇧</div>
       <div class="meta">
         <div class="name">英国自驾探险家 🚗</div>
-        <div class="date">2026.07-08 · 英格兰+苏格兰 16天</div>
+        <div class="date">2026.07-08 · 英格兰+苏格兰 18天</div>
       </div>
       <div class="like-btn">❤ 3.8k</div>
     </div>
   </div>
-
   <div class="spread">
     <div class="page">
       <div class="ptitle">🗺️ 路线概览</div>
-      <div class="psub"><span>🚗 自驾 ~1442 miles</span><span>⏱ ~27.5h</span><span>📍 19 个目的地</span></div>
+      <div class="psub"><span>🚗 自驾 ~1442 miles</span><span>⏱ ~27.5h</span><span>📍 20 个目的地</span></div>
       <div class="summary">
         <div class="c c1"><div class="n">12</div><div class="l">🇬🇧 英格兰</div></div>
         <div class="c c2"><div class="n">3</div><div class="l">🏞️ 湖区</div></div>
-        <div class="c c3"><div class="n">4</div><div class="l">🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰</div></div>
+        <div class="c c3"><div class="n">5</div><div class="l">🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰</div></div>
       </div>
       <div class="rs">
         <span class="s"><span class="dot" style="background:#3a8a9e;"></span>伦敦→爱丁堡</span>
         <span>→</span>
-        <span class="s"><span class="dot" style="background:#d4895a;"></span>高地→西海岸</span>
+        <span class="s"><span class="dot" style="background:#d4895a;"></span>尼斯湖→斯凯岛→格拉斯哥</span>
         <span>→</span>
-        <span class="s"><span class="dot" style="background:#5cb87a;"></span>湖区→回伦敦</span>
+        <span class="s"><span class="dot" style="background:#5cb87a;"></span>湖区→伦敦</span>
       </div>
       <div class="mapc" style="max-height:420px;">
 <svg viewBox="0 0 700 520" xmlns="http://www.w3.org/2000/svg" style="background:#f7f3ea;">
@@ -110,210 +95,216 @@
   <rect width="700" height="520" fill="#f7f3ea"/>
   <rect width="700" height="520" fill="url(#grid)"/>
 
-  <!-- 海域 -->
-  <ellipse cx="100" cy="300" rx="120" ry="260" fill="#d4e8f0" opacity=".40"/>
-  <ellipse cx="600" cy="300" rx="100" ry="240" fill="#d4e8f0" opacity=".30"/>
-  <text x="50" y="120" font-size="12" fill="#80b8c8" font-weight="500">🌊 大西洋</text>
-  <text x="580" y="120" font-size="12" fill="#80b8c8" font-weight="500">🌊 北海</text>
+  <ellipse cx="95" cy="280" rx="120" ry="260" fill="#d4e8f0" opacity=".40"/>
+  <ellipse cx="610" cy="280" rx="100" ry="240" fill="#d4e8f0" opacity=".30"/>
+  <text x="48" y="110" font-size="12" fill="#80b8c8" font-weight="500">🌊 大西洋</text>
+  <text x="590" y="110" font-size="12" fill="#80b8c8" font-weight="500">🌊 北海</text>
 
-  <!-- 大不列颠岛轮廓 -->
-  <path d="M 330 20 C 350 18, 380 25, 400 35 C 410 45, 425 65, 420 85 C 415 100, 405 120, 400 140 C 395 160, 410 180, 415 200 C 420 220, 425 240, 415 260 C 410 280, 405 300, 400 320 C 395 340, 400 360, 410 380 C 415 400, 410 420, 400 440 C 380 465, 340 485, 300 490 C 260 492, 220 485, 190 470 C 170 460, 160 440, 150 420 C 140 400, 135 380, 140 360 C 145 340, 155 320, 165 300 C 170 280, 160 260, 155 240 C 150 220, 145 200, 155 180 C 165 160, 180 140, 195 120 C 210 100, 225 80,  240 60 C 255 45,  275 30,  300 22 C 315 18,  325 18,  330 20 Z" fill="#f0ebe4" stroke="#d0c8b8" stroke-width="2.5" opacity=".75"/>
+  <path d="M 330 20 C 350 18, 380 25, 400 35 C 410 45, 425 65, 420 85 C 415 100, 405 120, 400 140 C 395 160, 410 180, 415 200 C 420 220, 425 240, 415 260 C 410 280, 405 300, 400 320 C 395 340, 400 360, 410 380 C 415 400, 410 420, 400 440 C 380 465, 345 488, 305 492 C 260 495, 220 488, 190 475 C 170 465, 160 445, 150 425 C 140 405, 135 385, 140 365 C 145 345, 155 325, 165 305 C 170 285, 160 265, 155 245 C 150 225, 145 200, 155 180 C 165 160, 180 140, 195 120 C 210 100, 225 80,  240 60 C 255 45,  275 30,  300 22 C 315 18,  325 18,  330 20 Z" fill="#f0ebe4" stroke="#d0c8b8" stroke-width="2.5" opacity=".75"/>
 
-  <!-- 国家水印 -->
-  <text x="300" y="450" font-size="28" font-weight="700" fill="#70b8d0" opacity=".10" transform="rotate(-5,300,450)">英格兰</text>
-  <text x="280" y="130" font-size="28" font-weight="700" fill="#f0a070" opacity=".10" transform="rotate(-12,280,130)">苏格兰</text>
+  <text x="300" y="450" font-size="28" font-weight="700" fill="#3a8a9e" opacity=".10" transform="rotate(-5,300,450)">英格兰</text>
+  <text x="280" y="130" font-size="28" font-weight="700" fill="#d4895a" opacity=".10" transform="rotate(-12,280,130)">苏格兰</text>
 
-  <!-- 统一路线（全蓝绿渐变） -->
-  <path d="M 340 470 L 280 485 M 280 485 L 370 320 M 370 320 L 400 255 M 400 255 L 410 205 M 410 205 L 400 105 M 400 105 L 340 35 M 340 35 L 370 70 M 370 70 L 220 145 M 220 145 L 150 215 M 150 215 L 180 220 M 180 220 L 200 205 M 200 205 L 310 345 M 310 345 L 270 370 M 270 370 L 330 380 M 330 380 L 310 455 M 310 455 L 210 485 M 210 485 L 280 485" stroke="#4a9e8e" stroke-width="3" fill="none" class="route-line" stroke-linecap="round" stroke-linejoin="round" opacity=".7"/>
+  <path d="M 345 485 L 270 485 M 270 485 L 385 320 M 385 320 L 420 255 M 420 255 L 440 200 M 440 200 L 420 110 M 420 110 L 350 35 M 350 35 L 390 70 M 390 70 L 350 35 M 350 35 L 120 85 M 120 85 L 220 155 M 220 155 L 135 205 M 135 205 L 175 235 M 175 235 L 215 195 M 215 195 L 320 345 M 320 345 L 270 375 M 270 375 L 340 390 M 340 390 L 310 460 M 310 460 L 195 490 M 195 490 L 270 485" stroke="#4a9e8e" stroke-width="3" fill="none" class="route-line" stroke-linecap="round" stroke-linejoin="round" opacity=".7"/>
 
 
   <g filter="url(#shadow)">
-    <circle cx="340" cy="470" r="20" fill="#3a8a9e" stroke="#fff" stroke-width="3"/>
-    <text x="340" y="471" font-size="14" fill="#fff" text-anchor="middle" dominant-baseline="central">🏛️</text>
+    <circle cx="345" cy="485" r="20" fill="#3a8a9e" stroke="#fff" stroke-width="3"/>
+    <text x="345" y="486" font-size="14" fill="#fff" text-anchor="middle" dominant-baseline="central">🏛️</text>
   </g>
   <g>
-    <text x="340" y="442" font-size="11" fill="#444" font-weight="600" text-anchor="middle">伦敦</text>
-    <text x="340" y="451" font-size="7.5" fill="#888" text-anchor="middle">首都·大英博物馆</text>
+    <text x="345" y="457" font-size="11" fill="#444" font-weight="600" text-anchor="middle">伦敦</text>
+    <text x="345" y="466" font-size="7.5" fill="#888" text-anchor="middle">首都·大英博物馆</text>
   </g>
 
 
   <g filter="url(#shadow)">
-    <circle cx="280" cy="485" r="14" fill="#3a8a9e" stroke="#fff" stroke-width="3"/>
-    <text x="280" y="486" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">✈️</text>
+    <circle cx="195" cy="490" r="14" fill="#3a8a9e" stroke="#fff" stroke-width="3"/>
+    <text x="195" y="491" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🌊</text>
   </g>
   <g>
-    <text x="280" y="463" font-size="11" fill="#444" font-weight="600" text-anchor="middle">希思罗</text>
-    <text x="280" y="472" font-size="7.5" fill="#888" text-anchor="middle">取车/还车</text>
+    <text x="195" y="468" font-size="11" fill="#444" font-weight="600" text-anchor="middle">七姐妹崖</text>
+    <text x="195" y="477" font-size="7.5" fill="#888" text-anchor="middle">白垩断崖</text>
   </g>
 
 
   <g filter="url(#shadow)">
-    <circle cx="210" cy="485" r="14" fill="#3a8a9e" stroke="#fff" stroke-width="3"/>
-    <text x="210" y="486" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🌊</text>
+    <circle cx="270" cy="485" r="14" fill="#3a8a9e" stroke="#fff" stroke-width="3"/>
+    <text x="270" y="486" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">✈️</text>
   </g>
   <g>
-    <text x="210" y="463" font-size="11" fill="#444" font-weight="600" text-anchor="middle">七姐妹崖</text>
-    <text x="210" y="472" font-size="7.5" fill="#888" text-anchor="middle">白垩断崖</text>
+    <text x="270" y="463" font-size="11" fill="#444" font-weight="600" text-anchor="middle">希思罗</text>
+    <text x="270" y="472" font-size="7.5" fill="#888" text-anchor="middle">取车/还车</text>
   </g>
 
 
   <g filter="url(#shadow)">
-    <circle cx="310" cy="455" r="14" fill="#3a8a9e" stroke="#fff" stroke-width="3"/>
-    <text x="310" y="456" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">👑</text>
+    <circle cx="310" cy="460" r="14" fill="#3a8a9e" stroke="#fff" stroke-width="3"/>
+    <text x="310" y="461" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">👑</text>
   </g>
   <g>
-    <text x="310" y="433" font-size="11" fill="#444" font-weight="600" text-anchor="middle">温莎</text>
-    <text x="310" y="442" font-size="7.5" fill="#888" text-anchor="middle">温莎城堡</text>
+    <text x="310" y="438" font-size="11" fill="#444" font-weight="600" text-anchor="middle">温莎</text>
+    <text x="310" y="447" font-size="7.5" fill="#888" text-anchor="middle">温莎城堡</text>
   </g>
 
 
   <g filter="url(#shadow)">
-    <circle cx="400" cy="425" r="14" fill="#3a8a9e" stroke="#fff" stroke-width="3"/>
-    <text x="400" y="426" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🎓</text>
+    <circle cx="415" cy="430" r="14" fill="#3a8a9e" stroke="#fff" stroke-width="3"/>
+    <text x="415" y="431" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🎓</text>
   </g>
   <g>
-    <text x="400" y="403" font-size="11" fill="#444" font-weight="600" text-anchor="middle">剑桥</text>
-    <text x="400" y="412" font-size="7.5" fill="#888" text-anchor="middle">康河撑船</text>
+    <text x="415" y="408" font-size="11" fill="#444" font-weight="600" text-anchor="middle">剑桥</text>
+    <text x="415" y="417" font-size="7.5" fill="#888" text-anchor="middle">康河撑船</text>
   </g>
 
 
   <g filter="url(#shadow)">
-    <circle cx="270" cy="370" r="14" fill="#3a8a9e" stroke="#fff" stroke-width="3"/>
-    <text x="270" y="371" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🏡</text>
+    <circle cx="270" cy="375" r="14" fill="#3a8a9e" stroke="#fff" stroke-width="3"/>
+    <text x="270" y="376" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🏡</text>
   </g>
   <g>
-    <text x="270" y="348" font-size="11" fill="#444" font-weight="600" text-anchor="middle">科兹沃尔德</text>
-    <text x="270" y="357" font-size="7.5" fill="#888" text-anchor="middle">水上波顿·拜伯里</text>
+    <text x="270" y="353" font-size="11" fill="#444" font-weight="600" text-anchor="middle">科兹沃尔德</text>
+    <text x="270" y="362" font-size="7.5" fill="#888" text-anchor="middle">水上波顿·拜伯里</text>
   </g>
 
 
   <g filter="url(#shadow)">
-    <circle cx="330" cy="380" r="14" fill="#3a8a9e" stroke="#fff" stroke-width="3"/>
-    <text x="330" y="381" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">📚</text>
+    <circle cx="340" cy="390" r="14" fill="#3a8a9e" stroke="#fff" stroke-width="3"/>
+    <text x="340" y="391" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">📚</text>
   </g>
   <g>
-    <text x="330" y="358" font-size="11" fill="#444" font-weight="600" text-anchor="middle">牛津</text>
-    <text x="330" y="367" font-size="7.5" fill="#888" text-anchor="middle">牛津大学</text>
+    <text x="340" y="368" font-size="11" fill="#444" font-weight="600" text-anchor="middle">牛津</text>
+    <text x="340" y="377" font-size="7.5" fill="#888" text-anchor="middle">牛津大学</text>
   </g>
 
 
   <g filter="url(#shadow)">
-    <circle cx="250" cy="340" r="14" fill="#3a8a9e" stroke="#fff" stroke-width="3"/>
-    <text x="250" y="341" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🎭</text>
+    <circle cx="240" cy="345" r="14" fill="#3a8a9e" stroke="#fff" stroke-width="3"/>
+    <text x="240" y="346" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🎭</text>
   </g>
   <g>
-    <text x="250" y="318" font-size="11" fill="#444" font-weight="600" text-anchor="middle">斯特拉福德</text>
-    <text x="250" y="327" font-size="7.5" fill="#888" text-anchor="middle">莎士比亚故居</text>
+    <text x="240" y="323" font-size="11" fill="#444" font-weight="600" text-anchor="middle">斯特拉福德</text>
+    <text x="240" y="332" font-size="7.5" fill="#888" text-anchor="middle">莎士比亚故居</text>
   </g>
 
 
   <g filter="url(#shadow)">
-    <circle cx="310" cy="345" r="14" fill="#3a8a9e" stroke="#fff" stroke-width="3"/>
-    <text x="310" y="346" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🏭</text>
+    <circle cx="320" cy="345" r="14" fill="#3a8a9e" stroke="#fff" stroke-width="3"/>
+    <text x="320" y="346" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🏭</text>
   </g>
   <g>
-    <text x="310" y="323" font-size="11" fill="#444" font-weight="600" text-anchor="middle">Redditch</text>
-    <text x="310" y="332" font-size="7.5" fill="#888" text-anchor="middle">伯明翰周边</text>
+    <text x="320" y="323" font-size="11" fill="#444" font-weight="600" text-anchor="middle">Redditch</text>
+    <text x="320" y="332" font-size="7.5" fill="#888" text-anchor="middle">伯明翰周边</text>
   </g>
 
 
   <g filter="url(#shadow)">
-    <circle cx="370" cy="320" r="14" fill="#3a8a9e" stroke="#fff" stroke-width="3"/>
-    <text x="370" y="321" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🏚️</text>
+    <circle cx="385" cy="320" r="14" fill="#3a8a9e" stroke="#fff" stroke-width="3"/>
+    <text x="385" y="321" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🏚️</text>
   </g>
   <g>
-    <text x="370" y="298" font-size="11" fill="#444" font-weight="600" text-anchor="middle">Grantham</text>
-    <text x="370" y="307" font-size="7.5" fill="#888" text-anchor="middle">高速途经</text>
+    <text x="385" y="298" font-size="11" fill="#444" font-weight="600" text-anchor="middle">Grantham</text>
+    <text x="385" y="307" font-size="7.5" fill="#888" text-anchor="middle">高速途经</text>
   </g>
 
 
   <g filter="url(#shadow)">
-    <circle cx="400" cy="255" r="14" fill="#3a8a9e" stroke="#fff" stroke-width="3"/>
-    <text x="400" y="256" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">⛪</text>
+    <circle cx="420" cy="255" r="14" fill="#3a8a9e" stroke="#fff" stroke-width="3"/>
+    <text x="420" y="256" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">⛪</text>
   </g>
   <g>
-    <text x="400" y="233" font-size="11" fill="#444" font-weight="600" text-anchor="middle">约克</text>
-    <text x="400" y="242" font-size="7.5" fill="#888" text-anchor="middle">大教堂·肉铺街</text>
+    <text x="420" y="233" font-size="11" fill="#444" font-weight="600" text-anchor="middle">约克</text>
+    <text x="420" y="242" font-size="7.5" fill="#888" text-anchor="middle">大教堂·肉铺街</text>
   </g>
 
 
   <g filter="url(#shadow)">
-    <circle cx="410" cy="205" r="14" fill="#3a8a9e" stroke="#fff" stroke-width="3"/>
-    <text x="410" y="206" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🌉</text>
+    <circle cx="440" cy="200" r="14" fill="#3a8a9e" stroke="#fff" stroke-width="3"/>
+    <text x="440" y="201" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🌉</text>
   </g>
   <g>
-    <text x="410" y="183" font-size="11" fill="#444" font-weight="600" text-anchor="middle">纽卡斯尔</text>
-    <text x="410" y="192" font-size="7.5" fill="#888" text-anchor="middle">泰恩河畔</text>
+    <text x="440" y="178" font-size="11" fill="#444" font-weight="600" text-anchor="middle">纽卡斯尔</text>
+    <text x="440" y="187" font-size="7.5" fill="#888" text-anchor="middle">泰恩河畔</text>
   </g>
 
 
   <g filter="url(#shadow)">
-    <circle cx="180" cy="220" r="14" fill="#5cb87a" stroke="#fff" stroke-width="3"/>
-    <text x="180" y="221" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🏞️</text>
+    <circle cx="175" cy="235" r="14" fill="#5cb87a" stroke="#fff" stroke-width="3"/>
+    <text x="175" y="236" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🏞️</text>
   </g>
   <g>
-    <text x="180" y="198" font-size="11" fill="#444" font-weight="600" text-anchor="middle">湖区</text>
-    <text x="180" y="207" font-size="7.5" fill="#888" text-anchor="middle">华兹华斯故居</text>
+    <text x="175" y="213" font-size="11" fill="#444" font-weight="600" text-anchor="middle">湖区</text>
+    <text x="175" y="222" font-size="7.5" fill="#888" text-anchor="middle">华兹华斯故居</text>
   </g>
 
 
   <g filter="url(#shadow)">
-    <circle cx="200" cy="205" r="14" fill="#5cb87a" stroke="#fff" stroke-width="3"/>
-    <text x="200" y="206" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🚢</text>
+    <circle cx="215" cy="195" r="14" fill="#5cb87a" stroke="#fff" stroke-width="3"/>
+    <text x="215" y="196" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🚢</text>
   </g>
   <g>
-    <text x="200" y="183" font-size="11" fill="#444" font-weight="600" text-anchor="middle">温德米尔</text>
-    <text x="200" y="192" font-size="7.5" fill="#888" text-anchor="middle">湖畔住宿</text>
+    <text x="215" y="173" font-size="11" fill="#444" font-weight="600" text-anchor="middle">温德米尔</text>
+    <text x="215" y="182" font-size="7.5" fill="#888" text-anchor="middle">湖畔住宿</text>
   </g>
 
 
   <g filter="url(#shadow)">
-    <circle cx="150" cy="215" r="14" fill="#5cb87a" stroke="#fff" stroke-width="3"/>
-    <text x="150" y="216" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🏖️</text>
+    <circle cx="135" cy="205" r="14" fill="#5cb87a" stroke="#fff" stroke-width="3"/>
+    <text x="135" y="206" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🏖️</text>
   </g>
   <g>
-    <text x="150" y="193" font-size="11" fill="#444" font-weight="600" text-anchor="middle">圣比斯</text>
-    <text x="150" y="202" font-size="7.5" fill="#888" text-anchor="middle">海滨小镇</text>
+    <text x="135" y="183" font-size="11" fill="#444" font-weight="600" text-anchor="middle">圣比斯</text>
+    <text x="135" y="192" font-size="7.5" fill="#888" text-anchor="middle">海滨小镇</text>
   </g>
 
 
   <g filter="url(#shadow)">
-    <circle cx="220" cy="145" r="14" fill="#d4895a" stroke="#fff" stroke-width="3"/>
-    <text x="220" y="146" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🏙️</text>
+    <circle cx="420" cy="110" r="20" fill="#d4895a" stroke="#fff" stroke-width="3"/>
+    <text x="420" y="111" font-size="14" fill="#fff" text-anchor="middle" dominant-baseline="central">🏰</text>
   </g>
   <g>
-    <text x="220" y="123" font-size="11" fill="#444" font-weight="600" text-anchor="middle">格拉斯哥</text>
-    <text x="220" y="132" font-size="7.5" fill="#888" text-anchor="middle">苏格兰最大城市</text>
+    <text x="420" y="82" font-size="11" fill="#444" font-weight="600" text-anchor="middle">爱丁堡</text>
+    <text x="420" y="91" font-size="7.5" fill="#888" text-anchor="middle">城堡·皇家英里</text>
   </g>
 
 
   <g filter="url(#shadow)">
-    <circle cx="400" cy="105" r="20" fill="#d4895a" stroke="#fff" stroke-width="3"/>
-    <text x="400" y="106" font-size="14" fill="#fff" text-anchor="middle" dominant-baseline="central">🏰</text>
+    <circle cx="350" cy="35" r="14" fill="#d4895a" stroke="#fff" stroke-width="3"/>
+    <text x="350" y="36" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🏴󠁧󠁢󠁳󠁣󠁴󠁿</text>
   </g>
   <g>
-    <text x="400" y="77" font-size="11" fill="#444" font-weight="600" text-anchor="middle">爱丁堡</text>
-    <text x="400" y="86" font-size="7.5" fill="#888" text-anchor="middle">城堡·皇家英里</text>
+    <text x="350" y="13" font-size="11" fill="#444" font-weight="600" text-anchor="middle">因弗内斯</text>
+    <text x="350" y="22" font-size="7.5" fill="#888" text-anchor="middle">尼斯湖·高地</text>
   </g>
 
 
   <g filter="url(#shadow)">
-    <circle cx="340" cy="35" r="14" fill="#d4895a" stroke="#fff" stroke-width="3"/>
-    <text x="340" y="36" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🏴󠁧󠁢󠁳󠁣󠁴󠁿</text>
+    <circle cx="390" cy="70" r="14" fill="#d4895a" stroke="#fff" stroke-width="3"/>
+    <text x="390" y="71" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🏔️</text>
   </g>
   <g>
-    <text x="340" y="13" font-size="11" fill="#444" font-weight="600" text-anchor="middle">因弗内斯</text>
-    <text x="340" y="22" font-size="7.5" fill="#888" text-anchor="middle">尼斯湖·高地</text>
+    <text x="390" y="48" font-size="11" fill="#444" font-weight="600" text-anchor="middle">凯恩戈姆斯</text>
+    <text x="390" y="57" font-size="7.5" fill="#888" text-anchor="middle">国家公园徒步</text>
   </g>
 
 
   <g filter="url(#shadow)">
-    <circle cx="370" cy="70" r="14" fill="#d4895a" stroke="#fff" stroke-width="3"/>
-    <text x="370" y="71" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🏔️</text>
+    <circle cx="120" cy="85" r="14" fill="#d4895a" stroke="#fff" stroke-width="3"/>
+    <text x="120" y="86" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🏝️</text>
   </g>
   <g>
-    <text x="370" y="48" font-size="11" fill="#444" font-weight="600" text-anchor="middle">凯恩戈姆斯</text>
-    <text x="370" y="57" font-size="7.5" fill="#888" text-anchor="middle">国家公园徒步</text>
+    <text x="120" y="63" font-size="11" fill="#444" font-weight="600" text-anchor="middle">斯凯岛</text>
+    <text x="120" y="72" font-size="7.5" fill="#888" text-anchor="middle">天空岛·渡轮</text>
+  </g>
+
+
+  <g filter="url(#shadow)">
+    <circle cx="220" cy="155" r="14" fill="#d4895a" stroke="#fff" stroke-width="3"/>
+    <text x="220" y="156" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🏙️</text>
+  </g>
+  <g>
+    <text x="220" y="133" font-size="11" fill="#444" font-weight="600" text-anchor="middle">格拉斯哥</text>
+    <text x="220" y="142" font-size="7.5" fill="#888" text-anchor="middle">最大城市·西海岸</text>
   </g>
 
 
@@ -333,7 +324,7 @@
     </div>
     <div class="page">
       <div class="ptitle">📅 逐日行程</div>
-      <div class="psub"><span>⭐ 16天完整路线</span><span>📌 修订版（移除天空岛）</span></div>
+      <div class="psub"><span>⭐ 18天完整路线</span><span>📍 斯凯岛→格拉斯哥（渡轮）</span></div>
       <div class="dl">
 
         <div class="di">
@@ -346,8 +337,8 @@
         <div class="di">
           <div class="dn" style="background:#3a8a9e;">18</div>
           <div class="info">
-            <div class="t">🎭 伦敦·西区</div>
-            <div class="d">国家美术馆 · 海格特公墓</div>
+            <div class="t">🎭 伦敦·国家美术馆</div>
+            <div class="d">海格特公墓 · 国家美术馆</div>
           </div>
         </div>
         <div class="di">
@@ -361,21 +352,21 @@
           <div class="dn" style="background:#3a8a9e;">20</div>
           <div class="info">
             <div class="t">🎓 伦敦→剑桥</div>
-            <div class="d">大英博物馆 → 康河撑船</div>
+            <div class="d">大英博物馆 → 康河撑船·三一学院</div>
           </div>
         </div>
         <div class="di">
           <div class="dn" style="background:#3a8a9e;">21</div>
           <div class="info">
             <div class="t">🚗 希思罗取车→约克</div>
-            <div class="d">15:00取车→剑桥接人→北赴约克</div>
+            <div class="d">15:00取车→剑桥接人→北上</div>
           </div>
         </div>
         <div class="di">
           <div class="dn" style="background:#3a8a9e;">22</div>
           <div class="info">
-            <div class="t">⛪ 约克→爱丁堡</div>
-            <div class="d">约克大教堂·肉铺街→宿纽卡斯尔</div>
+            <div class="t">⛪ 约克→纽卡斯尔</div>
+            <div class="d">约克大教堂·肉铺街→泰恩河畔</div>
           </div>
         </div>
         <div class="di">
@@ -388,7 +379,7 @@
         <div class="di">
           <div class="dn" style="background:#d4895a;">24</div>
           <div class="info">
-            <div class="t">🏴󠁧󠁢󠁳󠁣󠁴󠁿 爱丁堡</div>
+            <div class="t">🏴󠁧󠁢󠁳󠁣󠁴󠁿 爱丁堡自由日</div>
             <div class="d">自由游览·苏格兰风情</div>
           </div>
         </div>
@@ -396,7 +387,7 @@
           <div class="dn" style="background:#d4895a;">25</div>
           <div class="info">
             <div class="t">🏴󠁧󠁢󠁳󠁣󠁴󠁿 爱丁堡→尼斯湖</div>
-            <div class="d">苏格兰高地·尼斯湖</div>
+            <div class="d">途经凯恩戈姆斯国家公园</div>
           </div>
         </div>
         <div class="di">
@@ -409,52 +400,69 @@
         <div class="di">
           <div class="dn" style="background:#d4895a;">27</div>
           <div class="info">
-            <div class="t">🏙️ 凯恩戈姆斯→格拉斯哥</div>
-            <div class="d">穿越高地南下</div>
+            <div class="t">⛴️ 因弗内斯→斯凯岛</div>
+            <div class="d">回因弗内斯→渡轮至天空岛</div>
           </div>
         </div>
         <div class="di">
-          <div class="dn" style="background:#5cb87a;">28</div>
+          <div class="dn" style="background:#d4895a;">28</div>
+          <div class="info">
+            <div class="t">🏝️ 斯凯岛</div>
+            <div class="d">天空岛仙境·灯塔</div>
+          </div>
+        </div>
+        <div class="di">
+          <div class="dn" style="background:#d4895a;">29</div>
+          <div class="info">
+            <div class="t">🌉 斯凯岛→格拉斯哥</div>
+            <div class="d">渡轮+公路·抵达西海岸</div>
+          </div>
+        </div>
+        <div class="di">
+          <div class="dn" style="background:#5cb87a;">30</div>
           <div class="info">
             <div class="t">🏖️ 格拉斯哥→湖区</div>
-            <div class="d">湖区徒步·海滨住宿</div>
+            <div class="d">圣比斯海滨·湖区徒步</div>
           </div>
         </div>
         <div class="di">
-          <div class="dn" style="background:#5cb87a;">29</div>
+          <div class="dn" style="background:#5cb87a;">31</div>
           <div class="info">
             <div class="t">🏞️ 湖区</div>
             <div class="d">华兹华斯故居·彼得兔</div>
           </div>
         </div>
         <div class="di">
-          <div class="dn" style="background:#3a8a9e;">30</div>
+          <div class="dn" style="background:#3a8a9e;">01</div>
           <div class="info">
             <div class="t">🏭 湖区→Redditch</div>
-            <div class="d">伯明翰/莎士比亚故居可选</div>
+            <div class="d">莎士比亚故居可选</div>
           </div>
         </div>
         <div class="di">
-          <div class="dn" style="background:#3a8a9e;">31</div>
+          <div class="dn" style="background:#3a8a9e;">02</div>
           <div class="info">
             <div class="t">🏡 科兹沃尔德→温莎</div>
             <div class="d">水上波顿·拜伯里·牛津</div>
           </div>
         </div>
         <div class="di">
-          <div class="dn" style="background:#3a8a9e;">01</div>
+          <div class="dn" style="background:#3a8a9e;">03</div>
           <div class="info">
-            <div class="t">🌊 七姐妹崖→还车</div>
-            <div class="d">七姐妹崖 → 希思罗还车 → 飞返上海</div>
+            <div class="t">🌊 七姐妹崖→希思罗</div>
+            <div class="d">七姐妹崖 → 还车 → 飞返上海</div>
           </div>
         </div>
       </div>
-      <div class="st">📊 数据概览</div>
-      <div style="display:flex;gap:6px;flex-wrap:wrap;">
-        <span style="background:#e8f0f8;padding:4px 10px;border-radius:8px;font-size:10px;color:#555;">🚗 总里程 ~1442 miles</span>
-        <span style="background:#e8f0f8;padding:4px 10px;border-radius:8px;font-size:10px;color:#555;">⏱ 总驾车 ~27.5h</span>
-        <span style="background:#e8f0f8;padding:4px 10px;border-radius:8px;font-size:10px;color:#555;">🚗 奔驰自驾</span>
-        <span style="background:#e8f0f8;padding:4px 10px;border-radius:8px;font-size:10px;color:#555;">🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰高地4天</span>
+      <div style="margin-top:16px;padding:12px;background:#faf8f5;border-radius:12px;">
+        <div style="display:flex;gap:8px;align-items:flex-start;">
+          <span style="font-size:18px;">💡</span>
+          <div style="font-size:10px;color:#666;line-height:1.5;">
+            <span style="font-weight:600;color:#2c2c2c;font-size:11px;">路线说明</span><br>
+            • 爱丁堡→因弗内斯（途经凯恩戈姆斯）→斯凯岛（渡轮）→格拉斯哥<br>
+            • 格拉斯哥在西海岸，爱丁堡在东海岸，两地隔苏格兰中部相望
+          </div>
+        </div>
       </div>
     </div>
   </div>
