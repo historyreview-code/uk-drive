@@ -5,34 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>英国自驾 · 卡通路线地图</title>
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    background: #f5f0eb; display: flex; flex-direction: column; align-items: center;
-    justify-content: center; min-height: 100vh; padding: 24px;
-    font-family: system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
-  }
-  .wrapper {
-    max-width: 1100px; width: 100%; background: #fffdf9;
-    border-radius: 24px; box-shadow: 0 4px 28px rgba(0,0,0,.08); padding: 28px;
-  }
-  .title {
-    display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px;
-  }
-  .title h1 { font-size: 24px; font-weight: 700; color: #2c2c2c; }
-  .title .meta { font-size: 13px; color: #999; background: #f0ece6; padding: 5px 16px; border-radius: 20px; }
-  .mapc svg { display: block; width: 100%; height: auto; border-radius: 16px; }
-  @keyframes dashMove { to { stroke-dashoffset: -20; } }
-  .route-line { stroke-dasharray: 6 4; animation: dashMove .8s linear infinite; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#f5f0eb; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; padding:24px; font-family:system-ui,-apple-system,'PingFang SC','Microsoft YaHei',sans-serif; }
+  .wrapper { max-width:1100px; width:100%; background:#fffdf9; border-radius:24px; box-shadow:0 4px 28px rgba(0,0,0,.08); padding:28px; }
+  .title { display:flex; align-items:center; justify-content:space-between; margin-bottom:18px; }
+  .title h1 { font-size:24px; font-weight:700; color:#2c2c2c; }
+  .title .meta { font-size:13px; color:#999; background:#f0ece6; padding:5px 16px; border-radius:20px; }
+  .mapc svg { display:block; width:100%; height:auto; border-radius:16px; }
+  @keyframes dashMove { to { stroke-dashoffset:-20; } }
+  .route-line { stroke-dasharray:6 4; animation:dashMove .8s linear infinite; }
 </style>
 </head>
 <body>
 <div class="wrapper">
   <div class="title">
-    <h1>🇬🇧 英国自驾 · 18天环岛路线图</h1>
+    <h1>🇬🇧 英国自驾 · 16天环岛路线图</h1>
     <span class="meta">自驾 ~1442 miles / ~27.5h</span>
   </div>
-  <div class="mapc">
-<svg viewBox="0 0 700 520" xmlns="http://www.w3.org/2000/svg" style="background:#f7f3ea;">
+  <div class="mapc"><svg viewBox="0 0 700 520" xmlns="http://www.w3.org/2000/svg" style="background:#f7f3ea;">
   <defs>
     <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
       <circle cx="12" cy="12" r="1.2" fill="#e0d8cc" opacity=".35"/>
@@ -41,21 +31,16 @@
       <feDropShadow dx="1.5" dy="1.5" stdDeviation="2.5" flood-opacity=".12"/>
     </filter>
   </defs>
-
   <rect width="700" height="520" fill="#f7f3ea"/>
   <rect width="700" height="520" fill="url(#grid)"/>
-
   <ellipse cx="95" cy="280" rx="120" ry="260" fill="#d4e8f0" opacity=".40"/>
   <ellipse cx="610" cy="280" rx="100" ry="240" fill="#d4e8f0" opacity=".30"/>
   <text x="48" y="110" font-size="12" fill="#80b8c8" font-weight="500">🌊 大西洋</text>
   <text x="590" y="110" font-size="12" fill="#80b8c8" font-weight="500">🌊 北海</text>
-
   <path d="M 330 20 C 350 18, 380 25, 400 35 C 410 45, 425 65, 420 85 C 415 100, 405 120, 400 140 C 395 160, 410 180, 415 200 C 420 220, 425 240, 415 260 C 410 280, 405 300, 400 320 C 395 340, 400 360, 410 380 C 415 400, 410 420, 400 440 C 380 465, 345 488, 305 492 C 260 495, 220 488, 190 475 C 170 465, 160 445, 150 425 C 140 405, 135 385, 140 365 C 145 345, 155 325, 165 305 C 170 285, 160 265, 155 245 C 150 225, 145 200, 155 180 C 165 160, 180 140, 195 120 C 210 100, 225 80,  240 60 C 255 45,  275 30,  300 22 C 315 18,  325 18,  330 20 Z" fill="#f0ebe4" stroke="#d0c8b8" stroke-width="2.5" opacity=".75"/>
-
   <text x="300" y="450" font-size="28" font-weight="700" fill="#3a8a9e" opacity=".10" transform="rotate(-5,300,450)">英格兰</text>
   <text x="280" y="130" font-size="28" font-weight="700" fill="#d4895a" opacity=".10" transform="rotate(-12,280,130)">苏格兰</text>
-
-  <path d="M 345 485 L 270 485 M 270 485 L 385 320 M 385 320 L 420 255 M 420 255 L 440 200 M 440 200 L 420 110 M 420 110 L 350 35 M 350 35 L 390 70 M 390 70 L 350 35 M 350 35 L 120 85 M 120 85 L 220 155 M 220 155 L 135 205 M 135 205 L 175 235 M 175 235 L 215 195 M 215 195 L 320 345 M 320 345 L 270 375 M 270 375 L 340 390 M 340 390 L 310 460 M 310 460 L 195 490 M 195 490 L 270 485" stroke="#4a9e8e" stroke-width="3" fill="none" class="route-line" stroke-linecap="round" stroke-linejoin="round" opacity=".7"/>
+  <path d="M 345 485 L 270 485 M 270 485 L 385 320 M 385 320 L 420 255 M 420 255 L 440 200 M 440 200 L 420 110 M 420 110 L 360 35 M 360 35 L 285 80 M 285 80 L 220 155 M 220 155 L 135 205 M 135 205 L 175 235 M 175 235 L 215 195 M 215 195 L 320 345 M 320 345 L 270 375 M 270 375 L 340 390 M 340 390 L 310 460 M 310 460 L 195 490 M 195 490 L 270 485" stroke="#4a9e8e" stroke-width="3" fill="none" class="route-line" stroke-linecap="round" stroke-linejoin="round" opacity=".7"/>
 
 
   <g filter="url(#shadow)">
@@ -219,32 +204,22 @@
 
 
   <g filter="url(#shadow)">
-    <circle cx="350" cy="35" r="14" fill="#d4895a" stroke="#fff" stroke-width="3"/>
-    <text x="350" y="36" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🏴󠁧󠁢󠁳󠁣󠁴󠁿</text>
+    <circle cx="360" cy="35" r="14" fill="#d4895a" stroke="#fff" stroke-width="3"/>
+    <text x="360" y="36" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🏴󠁧󠁢󠁳󠁣󠁴󠁿</text>
   </g>
   <g>
-    <text x="350" y="13" font-size="11" fill="#444" font-weight="600" text-anchor="middle">因弗内斯</text>
-    <text x="350" y="22" font-size="7.5" fill="#888" text-anchor="middle">尼斯湖·高地</text>
+    <text x="360" y="13" font-size="11" fill="#444" font-weight="600" text-anchor="middle">因弗内斯</text>
+    <text x="360" y="22" font-size="7.5" fill="#888" text-anchor="middle">尼斯湖·高地</text>
   </g>
 
 
   <g filter="url(#shadow)">
-    <circle cx="390" cy="70" r="14" fill="#d4895a" stroke="#fff" stroke-width="3"/>
-    <text x="390" y="71" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🏔️</text>
+    <circle cx="285" cy="80" r="14" fill="#d4895a" stroke="#fff" stroke-width="3"/>
+    <text x="285" y="81" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🏔️</text>
   </g>
   <g>
-    <text x="390" y="48" font-size="11" fill="#444" font-weight="600" text-anchor="middle">凯恩戈姆斯</text>
-    <text x="390" y="57" font-size="7.5" fill="#888" text-anchor="middle">国家公园徒步</text>
-  </g>
-
-
-  <g filter="url(#shadow)">
-    <circle cx="120" cy="85" r="14" fill="#d4895a" stroke="#fff" stroke-width="3"/>
-    <text x="120" y="86" font-size="12" fill="#fff" text-anchor="middle" dominant-baseline="central">🏝️</text>
-  </g>
-  <g>
-    <text x="120" y="63" font-size="11" fill="#444" font-weight="600" text-anchor="middle">斯凯岛</text>
-    <text x="120" y="72" font-size="7.5" fill="#888" text-anchor="middle">天空岛·渡轮</text>
+    <text x="285" y="58" font-size="11" fill="#444" font-weight="600" text-anchor="middle">凯恩戈姆斯</text>
+    <text x="285" y="67" font-size="7.5" fill="#888" text-anchor="middle">国家公园徒步</text>
   </g>
 
 
@@ -260,19 +235,12 @@
 
   <g transform="translate(30, 460)">
     <rect x="0" y="0" width="150" height="36" rx="10" fill="#fff" stroke="#e8e0d0" stroke-width="1" opacity=".95"/>
-    <circle cx="18" cy="18" r="6" fill="#3a8a9e" stroke="#fff" stroke-width="1.5"/>
-    <text x="30" y="21" font-size="9" fill="#555">英格兰</text>
-    <circle cx="68" cy="18" r="6" fill="#5cb87a" stroke="#fff" stroke-width="1.5"/>
-    <text x="80" y="21" font-size="9" fill="#555">湖区</text>
-    <circle cx="118" cy="18" r="6" fill="#d4895a" stroke="#fff" stroke-width="1.5"/>
-    <text x="130" y="21" font-size="9" fill="#555">苏格兰</text>
+    <circle cx="18" cy="18" r="6" fill="#3a8a9e" stroke="#fff" stroke-width="1.5"/><text x="30" y="21" font-size="9" fill="#555">英格兰</text>
+    <circle cx="68" cy="18" r="6" fill="#5cb87a" stroke="#fff" stroke-width="1.5"/><text x="80" y="21" font-size="9" fill="#555">湖区</text>
+    <circle cx="118" cy="18" r="6" fill="#d4895a" stroke="#fff" stroke-width="1.5"/><text x="130" y="21" font-size="9" fill="#555">苏格兰</text>
   </g>
 </svg>
-
-  </div>
-  <div style="margin-top:12px;display:flex;gap:16px;flex-wrap:wrap;font-size:11px;color:#888;justify-content:center;">
-    <span>📍 伦敦→剑桥→约克→爱丁堡→尼斯湖→凯恩戈姆斯→斯凯岛→格拉斯哥→湖区→科兹沃尔德→希思罗</span>
-  </div>
+</div>
 </div>
 </body>
 </html>
